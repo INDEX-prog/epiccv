@@ -55,18 +55,20 @@ export default function Pricing() {
             <div className="relative bg-navy-800 border-2 border-gold-500/50 rounded-3xl overflow-hidden">
               {/* Header */}
               <div className="bg-gradient-to-r from-gold-500/20 via-gold-400/10 to-gold-500/20 p-8 text-center border-b border-gold-500/30">
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold-500/20 rounded-full text-gold-400 text-sm font-medium mb-4">
-                  <span>⭐</span>
-                  <span>Most Popular</span>
+                {/* Launch Offer Badge */}
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gold-500/30 to-gold-400/30 border border-gold-400 rounded-full text-gold-300 text-sm font-bold mb-4 animate-pulse-slow">
+                  <span>🏰</span>
+                  <span>Launch Offer: 20% Off for a Limited Time!</span>
                 </div>
                 <h3 className="font-medieval text-2xl font-bold text-white mb-2">
                   Epic Resume Transformation
                 </h3>
-                <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-5xl md:text-6xl font-bold gradient-text">$29</span>
+                <div className="flex items-baseline justify-center gap-3">
+                  <span className="text-2xl md:text-3xl font-bold text-gray-500 line-through">$29</span>
+                  <span className="text-5xl md:text-6xl font-bold gradient-text">$23</span>
                   <span className="text-gray-400">/ resume</span>
                 </div>
-                <p className="text-gray-400 text-sm mt-2">One-time payment</p>
+                <p className="text-gold-400 text-sm mt-2 font-medium">One-time payment — Save $6 today!</p>
               </div>
 
               {/* Features */}
@@ -109,10 +111,15 @@ export default function Pricing() {
                   ) : (
                     <>
                       <span className="mr-2">⚔️</span>
-                      Begin Your Quest
+                      Claim Your Discount — Begin Now!
                     </>
                   )}
                 </button>
+
+                {/* Urgency Text */}
+                <p className="text-center text-gold-400 text-sm mt-4 font-medium">
+                  ⏳ This quest awaits only the swift — offer ends soon!
+                </p>
 
                 {/* Trust Badges */}
                 <div className="flex items-center justify-center gap-4 mt-6 text-gray-500 text-sm">
