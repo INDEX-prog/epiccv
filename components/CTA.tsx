@@ -16,11 +16,6 @@ export default function CTA() {
           <span className="text-4xl animate-float" style={{ animationDelay: "1s" }}>🛡️</span>
         </div>
 
-        {/* Launch Offer Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gold-500/20 to-gold-400/20 border border-gold-500/50 rounded-full mb-6 animate-pulse-slow">
-          <span className="text-gold-300 text-sm font-bold">🏰 Launch Offer: 20% Off — Only $23!</span>
-        </div>
-
         {/* Heading */}
         <h2 className="font-medieval text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
           <span className="text-white">Ready to Write Your </span>
@@ -35,16 +30,25 @@ export default function CTA() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-          <Link href="#pricing" className="btn-primary text-lg px-10 py-5 w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+          <Link href="/checkout?plan=trial" className="inline-flex items-center justify-center px-10 py-5 text-lg font-bold text-navy-900 bg-gradient-to-r from-green-400 to-green-600 rounded-lg shadow-lg shadow-green-500/25 hover:from-green-300 hover:to-green-500 transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
+            <span className="mr-2">🎁</span>
+            Start Free Trial
+          </Link>
+          <Link href="#pricing" className="btn-secondary text-lg px-8 py-4 w-full sm:w-auto">
             <span className="mr-2">⚔️</span>
-            Transform My Resume — <span className="line-through opacity-60 mr-1">$29</span> $23
+            Buy Now — $29
           </Link>
         </div>
 
+        {/* Free Trial Note */}
+        <p className="text-gray-400 text-sm mb-4">
+          No credit card required for free trial • Preview your transformation first
+        </p>
+
         {/* Urgency/Scarcity */}
         <p className="text-gray-400 text-sm">
-          ⏳ <span className="text-gold-400 font-medium">Heed the herald&apos;s call</span> — this royal discount fades with the dawn!
+          🔥 <span className="text-gold-400 font-medium">Limited time offer</span> — Price increases to $49 soon!
         </p>
       </div>
     </section>
