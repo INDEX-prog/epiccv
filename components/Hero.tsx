@@ -15,7 +15,12 @@ export default function Hero() {
       <div className="absolute bottom-20 right-10 text-gold-500/20 text-6xl animate-float" style={{ animationDelay: "1.5s" }}>👑</div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Badge */}
+        {/* Launch Offer Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gold-500/20 to-gold-400/20 border border-gold-500/50 rounded-full mb-4 animate-pulse-slow">
+          <span className="text-gold-300 text-sm font-bold">🏰 Launch Offer: 20% Off for a Limited Time!</span>
+        </div>
+
+        {/* AI Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full mb-8">
           <span className="text-gold-400 text-sm font-medium">✨ AI-Powered Resume Magic</span>
         </div>
@@ -37,7 +42,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <Link href="#pricing" className="btn-primary w-full sm:w-auto">
             <span className="mr-2">⚔️</span>
-            Begin Your Quest — $29
+            Begin Your Quest — <span className="line-through opacity-60 mr-1">$29</span> $23
           </Link>
           <Link href="#how-it-works" className="btn-secondary w-full sm:w-auto">
             See How It Works
