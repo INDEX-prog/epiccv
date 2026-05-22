@@ -1,0 +1,16 @@
+# >>> mymicrocorp auto-added — keep above any patterns you don't want overridden
+node_modules/
+.next/
+.vercel/
+dist/
+build/
+.cache/
+__pycache__/
+coverage/
+.turbo/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+# <<< mymicrocorp auto-added
