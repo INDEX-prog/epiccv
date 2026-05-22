@@ -10,30 +10,30 @@ export default function HowItWorks() {
     {
       number: "01",
       icon: "📜",
-      title: "Paste Your Resume",
+      title: "Paste Your Resume Text",
       description:
-        "Copy and paste your existing resume text. Don't worry about formatting — our AI handles it all.",
+        "Simply copy and paste your existing resume text. No formatting needed — our AI wizard handles all the magic.",
     },
     {
       number: "02",
       icon: "🏰",
-      title: "Choose Your Theme",
+      title: "Choose Your Fantasy Theme",
       description:
-        "Select from Knight, Wizard, Ranger, or Royal Court. Each theme brings a unique medieval fantasy flavor.",
+        "Pick from Knight, Wizard, Ranger, or Royal Court. Each medieval theme transforms your story differently.",
     },
     {
       number: "03",
       icon: "⚡",
-      title: "AI Transformation",
+      title: "See Your Epic Preview",
       description:
-        "Our AI wizard works its magic, transforming your mundane text into an epic medieval tale.",
+        "Watch your plain resume transform into a legendary medieval fantasy tale — preview completely free!",
     },
     {
       number: "04",
       icon: "👑",
       title: "Download & Conquer",
       description:
-        "Receive your legendary resume in PDF format. Ready to send to any kingdom... err, company!",
+        "Love it? Pay just $23 (20% launch discount!) to download your epic resume. Ready to impress any hiring manager!",
     },
   ];
 
@@ -47,14 +47,16 @@ export default function HowItWorks() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full text-gold-400 text-sm font-medium mb-4">
-            🗺️ Your Quest
+            🗺️ Simple & Magical
           </span>
           <h2 className="font-medieval text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             <span className="text-white">How </span>
             <span className="gradient-text">It Works</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Four simple steps to transform your resume into an epic legend
+            Four simple steps to transform your resume into a medieval fantasy legend.
+            <br />
+            <span className="text-gold-400">Preview free — pay only when you&apos;re ready!</span>
           </p>
         </div>
 
@@ -112,12 +114,22 @@ export default function HowItWorks() {
           </div>
         </div>
 
+        {/* Target Audience Note */}
+        <div className="text-center mt-12">
+          <p className="text-gray-400 text-sm mb-2">
+            🎯 Perfect for <span className="text-gold-400">recent grads</span> & <span className="text-gold-400">creative job seekers</span> who want to stand out
+          </p>
+        </div>
+
         {/* CTA */}
-        <div className="text-center mt-16">
-          <Link href="#pricing" className="btn-primary">
-            <span className="mr-2">🚀</span>
-            Start Your Transformation
+        <div className="text-center mt-8">
+          <Link href="https://epiccv.vercel.app" className="btn-primary">
+            <span className="mr-2">🎁</span>
+            Start Free Preview
           </Link>
+          <p className="text-gray-500 text-sm mt-3">
+            No credit card required • See your transformation first
+          </p>
         </div>
       </div>
     </section>
