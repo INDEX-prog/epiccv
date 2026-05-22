@@ -8,21 +8,27 @@ export default function FreeTrial() {
   }> = [
     {
       icon: "📝",
-      title: "Sign Up Free",
+      title: "Paste Your Resume Text",
       description:
-        "Create your account in seconds — no credit card required to start.",
+        "Simply copy and paste your existing resume text — no formatting needed. Our AI handles the rest.",
+    },
+    {
+      icon: "🏰",
+      title: "Choose Your Fantasy Theme",
+      description:
+        "Pick from Knight, Wizard, Ranger, or Royal Court. Each theme transforms your story differently.",
     },
     {
       icon: "⚔️",
-      title: "Get Your Preview",
+      title: "See Your Epic Preview",
       description:
-        "Upload your resume and see a preview of your epic medieval transformation.",
+        "Watch your plain resume transform into a medieval fantasy masterpiece — completely free!",
     },
     {
       icon: "👑",
-      title: "Unlock Full Access",
+      title: "Download When Ready",
       description:
-        "Love what you see? Pay $29 to download your complete legendary resume.",
+        "Love it? Pay just $23 (launch price) to download your legendary resume. No pressure!",
     },
   ];
 
@@ -40,21 +46,21 @@ export default function FreeTrial() {
         <div className="text-center mb-16">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full text-green-400 text-sm font-medium mb-4">
             <span>🎁</span>
-            <span>Try Before You Buy</span>
+            <span>Free Preview — No Credit Card Required</span>
           </span>
           <h2 className="font-medieval text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-white">Start Your Quest </span>
-            <span className="gradient-text">For Free</span>
+            <span className="text-white">See Your Epic Transformation </span>
+            <span className="gradient-text">Before You Pay</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Not sure if EpicCV is right for you? Try our free trial and see your resume 
-            transformed before committing. No credit card required!
+            Recent grad? Creative job seeker? Preview your medieval fantasy resume rewrite 
+            completely free. Pay only when you&apos;re ready to download.
           </p>
         </div>
 
         {/* Main Content */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left: Free Trial Card */}
+          {/* Left: Free Preview Card */}
           <div className="relative">
             {/* Glow Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 via-gold-400/20 to-green-500/10 rounded-3xl blur-xl"></div>
@@ -64,24 +70,27 @@ export default function FreeTrial() {
               <div className="bg-gradient-to-r from-green-500/20 via-green-400/10 to-green-500/20 p-8 text-center border-b border-green-500/30">
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-500/20 rounded-full text-green-400 text-sm font-medium mb-4">
                   <span>✨</span>
-                  <span>Free Trial</span>
+                  <span>Limited Free Preview</span>
                 </div>
                 <h3 className="font-medieval text-2xl font-bold text-white mb-2">
                   Preview Your Epic Resume
                 </h3>
                 <div className="flex items-baseline justify-center gap-2">
                   <span className="text-5xl md:text-6xl font-bold text-green-400">$0</span>
-                  <span className="text-gray-400">to start</span>
+                  <span className="text-gray-400">to preview</span>
                 </div>
-                <p className="text-gray-400 text-sm mt-2">No credit card required</p>
+                <p className="text-gray-400 text-sm mt-2">No credit card • No commitment</p>
               </div>
 
-              {/* Features */}
+              {/* What&apos;s Included */}
               <div className="p-8">
+                <p className="text-gold-400 text-sm font-medium mb-4 text-center">
+                  What&apos;s included in your free preview:
+                </p>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-start gap-3">
                     <span className="text-green-400 mt-0.5">✓</span>
-                    <span className="text-gray-300">See a preview of your transformed resume</span>
+                    <span className="text-gray-300">Paste your resume text & see it transformed</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-400 mt-0.5">✓</span>
@@ -89,26 +98,26 @@ export default function FreeTrial() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-400 mt-0.5">✓</span>
-                    <span className="text-gray-300">No commitment, cancel anytime</span>
+                    <span className="text-gray-300">See your full epic rewrite preview</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-400 mt-0.5">✓</span>
-                    <span className="text-gray-300">Upgrade only when you&apos;re ready</span>
+                    <span className="text-gray-300">Pay only $23 (20% off!) to download</span>
                   </li>
                 </ul>
 
                 {/* CTA Button */}
                 <Link
-                  href="/checkout?plan=trial"
+                  href="https://epiccv.vercel.app"
                   className="w-full inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-navy-900 bg-gradient-to-r from-green-400 to-green-600 rounded-lg shadow-lg shadow-green-500/25 hover:from-green-300 hover:to-green-500 transform hover:scale-105 transition-all duration-300"
                 >
                   <span className="mr-2">🎁</span>
-                  Start Free Trial
+                  Start Free Preview
                 </Link>
 
                 {/* Note */}
                 <p className="text-gray-500 text-xs text-center mt-4">
-                  Pay $29 only when you&apos;re ready to download
+                  Simple & magical: Paste text → Choose theme → See preview → Download when ready
                 </p>
               </div>
             </div>
@@ -117,7 +126,7 @@ export default function FreeTrial() {
           {/* Right: How It Works */}
           <div>
             <h3 className="font-medieval text-2xl font-bold text-white mb-8">
-              How the Free Trial Works
+              How Your Free Preview Works
             </h3>
             
             <div className="space-y-6">
@@ -146,13 +155,13 @@ export default function FreeTrial() {
               ))}
             </div>
 
-            {/* Guarantee */}
+            {/* Target Audience */}
             <div className="mt-8 p-4 bg-navy-800/50 border border-gold-500/20 rounded-xl flex items-start gap-3">
-              <span className="text-2xl">🛡️</span>
+              <span className="text-2xl">🎯</span>
               <div>
-                <p className="text-white font-medium">Risk-Free Guarantee</p>
+                <p className="text-white font-medium">Perfect For You If...</p>
                 <p className="text-gray-400 text-sm">
-                  Try the preview completely free. Only pay when you&apos;re 100% satisfied with your epic transformation.
+                  You&apos;re a recent grad or creative job seeker who wants to stand out. Make hiring managers remember YOUR name!
                 </p>
               </div>
             </div>
@@ -165,13 +174,13 @@ export default function FreeTrial() {
             Ready to see your resume become legendary?
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/checkout?plan=trial" className="btn-secondary">
+            <Link href="https://epiccv.vercel.app" className="btn-secondary">
               <span className="mr-2">🎁</span>
-              Start Free Trial
+              Start Free Preview
             </Link>
             <span className="text-gray-500">or</span>
             <Link href="#pricing" className="text-gold-400 hover:text-gold-300 transition-colors font-medium">
-              Skip to full purchase →
+              See launch pricing (20% off!) →
             </Link>
           </div>
         </div>
