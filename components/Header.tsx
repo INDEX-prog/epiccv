@@ -39,13 +39,19 @@ export default function Header() {
               How It Works
             </Link>
             <Link
+              href="#free-trial"
+              className="text-gray-300 hover:text-gold-400 transition-colors font-medium"
+            >
+              Free Trial
+            </Link>
+            <Link
               href="#pricing"
               className="text-gray-300 hover:text-gold-400 transition-colors font-medium"
             >
               Pricing
             </Link>
-            <Link href="#pricing" className="btn-primary text-base py-2 px-6">
-              Get Started
+            <Link href="/checkout?plan=trial" className="btn-primary text-base py-2 px-6">
+              Try Free
             </Link>
           </nav>
 
@@ -99,6 +105,13 @@ export default function Header() {
                 How It Works
               </Link>
               <Link
+                href="#free-trial"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-300 hover:text-gold-400 transition-colors font-medium py-2"
+              >
+                Free Trial
+              </Link>
+              <Link
                 href="#pricing"
                 onClick={() => setIsMenuOpen(false)}
                 className="text-gray-300 hover:text-gold-400 transition-colors font-medium py-2"
@@ -106,11 +119,11 @@ export default function Header() {
                 Pricing
               </Link>
               <Link
-                href="#pricing"
+                href="/checkout?plan=trial"
                 onClick={() => setIsMenuOpen(false)}
                 className="btn-primary text-base py-3 px-6 text-center mt-2"
               >
-                Get Started
+                Try Free
               </Link>
             </nav>
           </div>
