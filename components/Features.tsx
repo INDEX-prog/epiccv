@@ -8,37 +8,37 @@ export default function Features() {
       icon: "🧙‍♂️",
       title: "AI-Powered Transformation",
       description:
-        "Our advanced AI analyzes your resume and rewrites it with epic medieval fantasy flair while keeping all your real achievements intact.",
+        "Our magical AI transforms your plain resume text into an epic medieval fantasy tale — while keeping all your real achievements intact.",
     },
     {
       icon: "⚡",
-      title: "Instant Results",
+      title: "Instant Epic Preview",
       description:
-        "No waiting around. Get your transformed resume in under 2 minutes. Time is gold, adventurer!",
+        "See your transformation in seconds. Preview completely free — no credit card needed. Pay only when you&apos;re ready to download!",
+    },
+    {
+      icon: "🏰",
+      title: "Medieval Fantasy Themes",
+      description:
+        "Choose from Knight, Wizard, Ranger, or Royal Court themes. Each brings a unique legendary flavor to your professional tale.",
     },
     {
       icon: "🎯",
-      title: "ATS-Friendly",
+      title: "Perfect for Standing Out",
       description:
-        "Despite the fantasy styling, your resume remains parseable by Applicant Tracking Systems. Best of both worlds!",
-    },
-    {
-      icon: "🎨",
-      title: "Multiple Themes",
-      description:
-        "Choose from Knight, Wizard, Ranger, or Royal Court themes. Each brings a unique flavor to your professional tale.",
+        "Recent grad or creative job seeker? Make hiring managers remember YOUR name with a resume that tells an unforgettable story.",
     },
     {
       icon: "📝",
-      title: "Easy Editing",
+      title: "Simple Paste & Transform",
       description:
-        "Download in multiple formats and easily tweak any section. Your epic story, your rules.",
+        "Just paste your resume text, pick a fantasy theme, and watch the magic happen. No complicated formatting or uploads needed.",
     },
     {
       icon: "💎",
       title: "Unforgettable Impact",
       description:
-        "Make recruiters smile and remember you. Stand out from thousands of boring, templated resumes.",
+        "Stand out from thousands of boring, templated resumes. Your epic legend makes recruiters smile and remember you.",
     },
   ];
 
@@ -53,14 +53,14 @@ export default function Features() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-gold-500/10 border border-gold-500/30 rounded-full text-gold-400 text-sm font-medium mb-4">
-            ✨ Features
+            ✨ Why EpicCV?
           </span>
           <h2 className="font-medieval text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             <span className="text-white">Your </span>
             <span className="gradient-text">Legendary Arsenal</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Every tool you need to craft a resume worthy of the halls of Valhalla
+            Transform your boring resume into a medieval fantasy masterpiece that gets noticed
           </p>
         </div>
 
@@ -82,6 +82,17 @@ export default function Features() {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Target Audience Callout */}
+        <div className="text-center mt-16">
+          <div className="inline-flex items-center gap-3 px-6 py-4 bg-navy-800/50 border border-gold-500/20 rounded-xl">
+            <span className="text-3xl">🎓</span>
+            <div className="text-left">
+              <p className="text-white font-medium">Built for Recent Grads & Creative Job Seekers</p>
+              <p className="text-gray-400 text-sm">Stand out from the crowd with a resume that tells YOUR epic story</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
