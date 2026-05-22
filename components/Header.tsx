@@ -42,7 +42,7 @@ export default function Header() {
               href="#free-trial"
               className="text-gray-300 hover:text-gold-400 transition-colors font-medium"
             >
-              Free Trial
+              Free Preview
             </Link>
             <Link
               href="#pricing"
@@ -50,7 +50,8 @@ export default function Header() {
             >
               Pricing
             </Link>
-            <Link href="/checkout?plan=trial" className="btn-primary text-base py-2 px-6">
+            <Link href="https://epiccv.vercel.app" className="btn-primary text-base py-2 px-6">
+              <span className="mr-1">🎁</span>
               Try Free
             </Link>
           </nav>
@@ -109,7 +110,7 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
                 className="text-gray-300 hover:text-gold-400 transition-colors font-medium py-2"
               >
-                Free Trial
+                Free Preview
               </Link>
               <Link
                 href="#pricing"
@@ -119,11 +120,12 @@ export default function Header() {
                 Pricing
               </Link>
               <Link
-                href="/checkout?plan=trial"
+                href="https://epiccv.vercel.app"
                 onClick={() => setIsMenuOpen(false)}
                 className="btn-primary text-base py-3 px-6 text-center mt-2"
               >
-                Try Free
+                <span className="mr-1">🎁</span>
+                Try Free Preview
               </Link>
             </nav>
           </div>
