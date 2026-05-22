@@ -16,6 +16,11 @@ export default function CTA() {
           <span className="text-4xl animate-float" style={{ animationDelay: "1s" }}>🛡️</span>
         </div>
 
+        {/* Launch Offer Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gold-500/20 to-gold-400/20 border border-gold-500/50 rounded-full mb-6 animate-pulse-slow">
+          <span className="text-gold-300 text-sm font-bold">🏰 Launch Offer: 20% Off — Only $23!</span>
+        </div>
+
         {/* Heading */}
         <h2 className="font-medieval text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
           <span className="text-white">Ready to Write Your </span>
@@ -33,13 +38,13 @@ export default function CTA() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <Link href="#pricing" className="btn-primary text-lg px-10 py-5 w-full sm:w-auto">
             <span className="mr-2">⚔️</span>
-            Transform My Resume — $29
+            Transform My Resume — <span className="line-through opacity-60 mr-1">$29</span> $23
           </Link>
         </div>
 
         {/* Urgency/Scarcity */}
         <p className="text-gray-400 text-sm">
-          🔥 <span className="text-gold-400 font-medium">Limited time offer</span> — Price increases to $49 soon!
+          ⏳ <span className="text-gold-400 font-medium">Heed the herald&apos;s call</span> — this royal discount fades with the dawn!
         </p>
       </div>
     </section>
