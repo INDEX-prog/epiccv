@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-navy-900 text-white antialiased;
+  }
+
+  ::selection {
+    @apply bg-gold-500 text-navy-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-navy-900 bg-gradient-to-r from-gold-400 to-gold-600 rounded-lg shadow-lg shadow-gold-500/25 hover:from-gold-300 hover:to-gold-500 transform hover:scale-105 transition-all duration-300 cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-gold-400 border-2 border-gold-500 rounded-lg hover:bg-gold-500/10 transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-navy-800/50 backdrop-blur-sm border border-gold-500/20 rounded-2xl p-8;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 bg-clip-text text-transparent;
+  }
+
+  .glow {
+    @apply relative;
+  }
+
+  .glow::before {
+    content: "";
+    @apply absolute inset-0 bg-gold-500/20 blur-3xl rounded-full -z-10;
+  }
+}
+
+@layer utilities {
+  .text-shadow-gold {
+    text-shadow: 0 0 20px rgba(212, 164, 24, 0.5);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
